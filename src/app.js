@@ -3,6 +3,7 @@ const hbs = require('hbs')
 const weather = require('./weather')
 const express = require('express');
 const app = express();
+console.log("just Checking....")
 // Define paths for Express configration 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname, '../template/view')
