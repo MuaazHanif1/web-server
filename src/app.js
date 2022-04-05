@@ -3,7 +3,7 @@ const hbs = require('hbs')
 const weather = require('./weather')
 const express = require('express');
 const app = express();
-console.log("just Checking....")
+const port = process.env.PORT || 3000
 // Define paths for Express configration 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewPath = path.join(__dirname, '../template/view')
@@ -73,6 +73,6 @@ app.get('/help/*', (req, res) => {
 //         message: 'page not Found'
 //     })
 // })
-app.listen(3000, () => {
-    console.log('3000 is on running')
+app.listen(port, () => {
+    console.log(`3000 is on running ${port}`)
 })
